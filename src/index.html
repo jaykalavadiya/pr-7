@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../dist/css/owl.theme.default.css">
+    <link rel="stylesheet" href="../dist/fonts/Mandali/stylesheet.css">
+    <link rel="stylesheet" href="../dist/fonts/fonts/remixicon.css">
+    <link rel="stylesheet" href="../dist/output.css">
+    <style>
+        .activ {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1111;
+    background-color: white;
+    color:rgb(55 65 81);
+    transition: 1s all;
+    animation: slide 1s linear;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+.activ .logo-img img:first-child{
+    display: block;
+}
+.activ .logo-img img:last-child{
+    display: none;
+}
+.activ nav li:first-child a{
+    color: rgb(13 110 253 );
+}
+.activ nav li a{
+    color: rgb(55 65 81 );
+    transition: .2s all;
+}
+.activ nav li a:hover{
+    color: rgb(13 110 253 );
+    font-weight: 600;
+}
+.activ .nav-btn .btn-1{
+    /* color: rgb(55 65 81 ); */
+    color: black !important;
+    background-color: transparent;
+}
+.activ .nav-btn .btn-2{
+    color: rgb(13 110 253 );
+    background-color: rgba(0, 0, 255, 0.11);
+    border: 1px solid rgb(13 110 253 );
+    transition: .4s all;
+} 
+.activ .nav-btn .btn-2:hover{
+    color: white;
+    background-color: blue;
+}
+    </style>
+</head>
+
+<body class="font-[Mandali]">
+
+    <!-- HEADER -->
+
+    <header class="relative lg:absolute lg:z-10 lg:left-0 lg:right-0 bg-transparent px-4">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center py-6">
+                <div class="logo-img">
+                    <a href="javascript:void(0)">
+                        <img src="../dist/img/logo-dark.png" alt="logo-dark" class="lg:hidden block">
+                        <img src="../dist/img/logo-light.png" alt="logo-light" class="hidden lg:block">
+                    </a>
+                </div>
+
+                <a href="javascipt:void(0)" class="lg:hidden toggle-manu">
+                    <i class="ri-menu-line text-2xl"></i>
+                </a>
+
+                <nav class="absolute top-full left-0 right-0 lg:static hidden lg:block bg-white lg:bg-transparent z-50">
+                    <ul class="flex flex-col lg:flex-row mx-32 lg:mx-0">
+                        <li class="me-9 lg:text-white font-semibold lg:pb-0 pb-3">
+                            <a href="javascript:void(0)">Home</a>
+                        </li>
+                        <li class="me-9 lg:text-gray-200 lg:hover:text-white py-3 lg:py-0 transition-all">
+                            <a href="javascript:void(0)">Features</a>
+                        </li>
+                        <li class="me-9 lg:text-gray-200 lg:hover:text-white py-3 lg:py-0 transition-all">
+                            <a href="javascript:void(0)">Screenshots</a>
+                        </li>
+                        <li class="me-9 lg:text-gray-200 lg:hover:text-white py-3 lg:py-0 transition-all">
+                            <a href="javascript:void(0)">Testimonial</a>
+                        </li>
+                        <li class="me-9 lg:text-gray-200 lg:hover:text-white py-3 lg:py-0 transition-all">
+                            <a href="javascript:void(0)">Pricing</a>
+                        </li>
+                        <li class="lg:text-gray-200 lg:hover:text-white py-3 lg:py-0 transition-all">
+                            <a href="javascript:void(0)">Contact us</a>
+                        </li>
+                    </ul>
+                    <div class="nav-btn lg:hidden my-8 px-32">
+                        <a href="javascript:void(0)" class="btn-1 text-black me-3 inline-block">Login</a>
+                        <a href="javascript:void(0)" class="btn-2 inline-block py-1 px-5 border border-gray-50/20 rounded bg-blue-50 text-blue-500 transition-all">Sing Up</a>
+                    </div>
+                </nav>
+                <div class="nav-btn hidden lg:block">
+                    <a href="javascript:void(0)" class="btn-1 text-white me-3">Login</a>
+                    <a href="javascript:void(0)" class="btn-2 text-white py-1 px-5 border border-gray-50/20 rounded bg-gray-50/20 hover:text-blue-500 hover:bg-white transition-all">Sing Up</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- banner -->
+
+    <main>
+        <section class="banner relative">
+            <div class="owl-carousel owl-theme owl-carousel-2">
+                <div class="bg-[url(../dist/img/hero-6-bg-1.jpg)] relative z-0 bg-cover bg-no-repeat h-screen before:bg-[#000000c0] before:h-full before:w-full before:absolute before:-z-10">
+                    <div class="flex items-center justify-center h-screen">
+                        <div class="text-center max-w-2xl">
+                            <div class="flex justify-center">
+                                <div class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-10 h-10 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h1 class="md:text-5xl text-3xl font-semibold text-white mt-10">IntegrateSalesforce with The Apps You Use.
+                            </h1>
+                            <p class="text-white/50 mt-5">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                blanditiis praesentium voluptatum deleniti atqued corrupti quos dolores et quas molestias
+                                excepturi sintoccaecati cupiditate.</p>
+                            <div class="mt-10">
+                                <a href="#" class="text-white py-3 px-7 bg-blue-800 rounded-md text-lg">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[url(../dist/img/hero-6-bg-2.jpg)] relative z-0 bg-cover bg-no-repeat h-screen before:bg-[#000000c0] before:h-full before:w-full before:absolute before:-z-10">
+                    <div class="flex items-center justify-center h-screen">
+                        <div class="text-center max-w-2xl">
+                            <div class="flex justify-center">
+                                <div class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-10 h-10 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h1 class="md:text-5xl text-3xl font-semibold text-white mt-10">IntegrateSalesforce with The Apps You Use.
+                            </h1>
+                            <p class="text-white/50 mt-5">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                blanditiis praesentium voluptatum deleniti atqued corrupti quos dolores et quas molestias
+                                excepturi sintoccaecati cupiditate.</p>
+                            <div class="mt-10">
+                                <a href="#" class="text-white py-3 px-7 bg-blue-800 rounded-md text-lg">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[url(../dist/img/hero-6-bg-3.jpg)] relative z-0 bg-cover bg-no-repeat h-screen before:bg-[#000000c0] before:h-full before:w-full before:absolute before:-z-10">
+                    <div class="flex items-center justify-center h-screen">
+                        <div class="text-center max-w-2xl">
+                            <div class="flex justify-center">
+                                <div class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-10 h-10 text-white">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h1 class="md:text-5xl text-3xl font-semibold text-white mt-10">IntegrateSalesforce with The Apps You Use.
+                            </h1>
+                            <p class="text-white/50 mt-5">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                blanditiis praesentium voluptatum deleniti atqued corrupti quos dolores et quas molestias
+                                excepturi sintoccaecati cupiditate.</p>
+                            <div class="mt-10">
+                                <a href="#" class="text-white py-3 px-7 bg-blue-800 rounded-md text-lg">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prevBtn absolute hidden lg:block top-1/2 left-20 z-40 bg-gray-50/20 border-4 hover:bg-white px-3 py-2 border-transparent group hover:border-white/5 hover:border-4 text-white hover:text-blue-700 rounded-lg transition-all duration-500 -rotate-45">
+                <a href="javascript:void(0)">
+                    <i class="ri-arrow-left-up-line text-2xl"></i>                     
+                      
+                </a>
+            </div> 
+            <div class="nextBtn absolute hidden lg:block right-20 top-1/2 z-40 bg-gray-50/20 border-4 hover:bg-white px-3 py-2 border-transparent group hover:border-white/5 hover:border-4 text-white hover:text-blue-700 rounded-lg transition-all duration-500 rotate-45">
+                <a href="javascript:void(0)">
+                    <i class="ri-arrow-right-up-line text-2xl"></i>                     
+                      
+                </a>
+            </div>
+        </section>
+
+        <!-- work -->
+
+        <section class="work py-24">
+            <div class="container mx-auto">
+                <div class="work-title text-center mx-auto max-w-xl">
+                    <h6 class="uppercase mb-2">How it
+                        <span class="font-semibold">Work</span>
+                    </h6>
+                    <h2 class="font-semibold mb-3 text-3xl">How dose it work ?</h2>
+                    <p class="text-gray-500">Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
+                        doloremque rem aperiam.</p>
+                </div>
+                <div class="work-inner mt-20">
+                    <div class="flex flex-wrap">
+                        <div class="lg:w-1/3 w-full">
+                            <div class="work-items max-w-sm mx-auto py-4 lg:py-0">
+                                <div class="relative">
+                                    <div class="text-center">
+                                        <span
+                                            class="inline-flex relative z-0 bg-blue-500/10 dark:bg-blue-100/5 h-24 w-24 items-center justify-center"
+                                            style="border-radius: 28% 72% 50% 50%/26% 20% 80% 74%;">
+                                            <i class="ri-list-unordered text-5xl"></i>
+    
+                                        </span>
+                                        <h5 class="font-semibold text-xl mb-3 mt-5">1. Intuitive visual editor</h5>
+                                        <p class="text-gray-500 max-w-xs mx-auto">Nemo enim ipsam quia voluptas sit
+                                            aspernatur ist dolores.</p>
+                                        <img src="../dist/img/arrow-top.png" alt="" class="absolute -right-20 top-2/4 w-28 hidden lg:block">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="lg:w-1/3 w-full">
+                        <div class="work-items max-w-sm mx-auto py-4 lg:py-0">
+                            <div class="relative">
+                                <div class="text-center">
+                                    <span
+                                        class="inline-flex relative z-0 bg-blue-500/10 dark:bg-blue-100/5 h-24 w-24 items-center justify-center"
+                                        style="border-radius: 28% 72% 50% 50%/26% 20% 80% 74%;">
+                                        <i class="ri-palette-line text-5xl"></i>
+
+                                    </span>
+                                    <h5 class="font-semibold text-xl mb-3 mt-5">2. Huge design collection</h5>
+                                    <p class="text-gray-500 max-w-xs mx-auto">Nemo enim ipsam quia voluptas sit
+                                        aspernatur ist dolores.</p>
+                                    <img src="../dist/img/arrow-bottom.png" alt=""
+                                        class="absolute -right-20 top-2/4 w-28 hidden lg:block">
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                        <div class="lg:w-1/3 w-full">
+                            <div class="work-items max-w-sm mx-auto py-4 lg:py-0">
+                                <div class="relative">
+                                    <div class="text-center">
+                                        <span
+                                            class="inline-flex relative z-0 bg-amber-500/10 dark:bg-amber-100/5 h-24 w-24 items-center justify-center"
+                                            style="border-radius: 28% 72% 50% 50%/26% 20% 80% 74%;">
+                                            <i class="ri-stack-line text-5xl"></i>
+    
+                                        </span>
+                                        <h5 class="font-semibold text-xl mb-3 mt-5">3. One click installation</h5>
+                                        <p class="text-gray-500 max-w-xs mx-auto">Nemo enim ipsam quia voluptas sit
+                                            aspernatur ist dolores.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- features -->
+
+        <section class="features py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="features-title text-center mx-auto max-w-xl">
+                    <h6 class="uppercase mb-2">Our
+                        <span class="font-semibold">Features</span>
+                    </h6>
+                    <h2 class="font-semibold mb-3 text-3xl">Smart Solutions For Buys People</h2>
+                    <p class="text-gray-500">Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
+                        doloremque rem aperiam.</p>
+                </div>
+                <div class="features-items mt-16">
+                    <div class="flex flex-wrap items-center">
+                        <div class="lg:w-2/4 w-full">
+                            <div class="features-img">
+                                <img src="../dist/img/features-1.png" alt="" class="mx-auto">
+                            </div>
+                        </div>
+                        <div class="lg:w-2/4 w-full">
+                            <div class="features-inner lg:ms-24 mt-8 lg:mt-0">
+                                <h2 class="font-semibold text-4xl">Discover your destination</h2>
+                                <p class="text-gray-500 mt-8 max-w-md">
+                                    On the other hand, we denounce with righteous indignation so blinded that they
+                                    cannot.
+                                </p>
+                                <div class="flex items-center gap-5 mt-5">
+                                    <div>
+                                        <div
+                                            class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg">
+                                            <i class="ri-check-line text-blue-600"></i>
+
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-500 max-w-md">
+                                        <span class="font-bold text-gray-900">
+                                            The wise a therefore always holds
+                                        </span>
+                                        in us matters to this principle a selection a rejects pleasures.
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-5 my-8">
+                                    <div>
+                                        <div
+                                            class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg">
+                                            <i class="ri-stack-line text-blue-600"></i>
+
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-500 max-w-md">
+                                        Sed perspiciatis omnis a
+                                        <span class="font-bold text-gray-900">
+                                            natus error accusantium doloremque
+                                        </span>
+                                        laudantium tota rem aperiam eaque ipsa quae illo inventore.
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-5">
+                                    <div>
+                                        <div
+                                            class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg">
+                                            <i class="ri-door-lock-box-line text-blue-600"></i>
+
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-500 max-w-md">
+                                        <span class="font-bold text-gray-900">
+                                            The wise a therefore always holds
+                                        </span>
+                                        in us matters to this principle a selection a rejects pleasures.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- features2 -->
+
+        <section class="features2 py-20 bg-gray-50 bg-no-repeat bg-cover"
+            style="background-image: url('../dist/img/features-bg.png');">
+            <div class="container mx-auto px-4">
+                <div class="features2-items mt-16">
+                    <div class="flex flex-wrap items-center">
+                        <div class="lg:w-2/4 w-full">
+                            <div class="features2-inner lg:ms-24">
+                                <h2 class="font-semibold text-4xl">Connecting people, Places</h2>
+                                <p class="text-gray-500 mt-8 max-w-md">
+                                    On the other hand, we denounce with righteous indignation so blinded that they
+                                    cannot.
+                                </p>
+                                <div class="flex items-center gap-5 mt-5">
+                                    <div>
+                                        <div
+                                            class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg">
+                                            <i class="ri-check-line text-blue-600"></i>
+
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-500 max-w-md">
+                                        <span class="font-bold text-gray-900">
+                                            The wise a therefore always holds
+                                        </span>
+                                        in us matters to this principle a selection a rejects pleasures.
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-5 my-8">
+                                    <div>
+                                        <div
+                                            class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg">
+                                            <i class="ri-stack-line text-blue-600"></i>
+
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-500 max-w-md">
+                                        Sed perspiciatis omnis a
+                                        <span class="font-bold text-gray-900">
+                                            natus error accusantium doloremque
+                                        </span>
+                                        laudantium tota rem aperiam eaque ipsa quae illo inventore.
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-5">
+                                    <div>
+                                        <div
+                                            class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg">
+                                            <i class="ri-door-lock-box-line text-blue-600"></i>
+
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-500 max-w-md">
+                                        <span class="font-bold text-gray-900">
+                                            The wise a therefore always holds
+                                        </span>
+                                        in us matters to this principle a selection a rejects pleasures.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-2/4 w-full">
+                            <div class="features-img mt-8">
+                                <img src="../dist/img/features-2.png" alt="" class="mx-auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- counter -->
+
+        <section class="counter py-28 relative bg-[url('../dist/img/counter-bg.jpg')] bg-cover z-0 bg-no-repeat bg-center before:h-full before:w-full before:bg-[#000000b6] before:absolute before:-z-10 before:top-0 before:left-0">
+            
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap">
+                    <div class="2xl:w-1/4 md:w-2/4 w-full">
+                        <div
+                            class="container-items border border-gray-500 rounded-lg text-white bg-gray-500/40 p-5 my-3 md:m-3 2xl:my-0">
+                            <div class="flex items-center gap-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                                </svg>
+
+                                <div>
+                                    <h1 class="text-4xl font-semibold count">825</h1>
+                                    <p class="text-lg mt-3 uppercase font-medium">Global Brands</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="2xl:w-1/4 md:w-2/4 w-full">
+                        <div
+                            class="container-items border border-gray-500 rounded-lg text-white bg-gray-500/40 p-5 my-3  md:m-3 2xl:my-0">
+                            <div class="flex items-center gap-6">
+                                <i class="ri-emotion-happy-fill text-5xl"></i>
+
+                                <div>
+                                    <h1 class="text-4xl font-semibold count">1800<span>+</span></h1>
+                                    <p class="text-lg mt-3 uppercase font-medium">Happy Clients</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="2xl:w-1/4 md:w-2/4 w-full">
+                        <div
+                            class="container-items border border-gray-500 rounded-lg text-white bg-gray-500/40 p-5 my-3  md:m-3 2xl:my-0">
+                            <div class="flex items-center gap-6">
+                                <i class="ri-lightbulb-fill text-5xl"></i>
+
+                                <div>
+                                    <h1 class="text-4xl font-semibold count">599<span>+</span></h1>
+                                    <p class="text-lg mt-3 uppercase font-medium">Global Brands</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="2xl:w-1/4 md:w-2/4 w-full">
+                        <div
+                            class="container-items border border-gray-500 rounded-lg text-white bg-gray-500/40 p-5 my-3  md:m-3 2xl:my-0">
+                            <div class="flex items-center gap-6">
+                                <i class="ri-account-circle-line text-5xl"></i>
+
+                                <div>
+                                    <h1 class="text-4xl font-semibold count">2000<span>+</span></h1>
+                                    <p class="text-lg mt-3 uppercase font-medium">User clients</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- screenshots -->
+
+        <section class="screenshots py-20">
+            <div class="container mx-auto px-4">
+                <div class="screenshots-title text-center mx-auto max-w-xl">
+                    <h6 class="uppercase mb-2">App
+                        <span class="font-semibold">Screens</span>
+                    </h6>
+                    <h2 class="font-semibold mb-3 text-3xl">Awesome Screenshot</h2>
+                    <p class="text-gray-500">Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
+                        doloremque rem aperiam.</p>
+                </div>
+                <!-- slider -->
+                <div class="screenshots-inner mt-16">
+                    <div class="loop owl-carousel owl-theme">
+                        <div class="screenshots-img p-1 mx-1 scale-90">
+                            <img src="../dist/img/1.jpg" alt="1" title="1" class="rounded-md border">
+                        </div>
+                        <div class="screenshots-img p-1 mx-1 scale-90">
+                            <img src="../dist/img/2.jpg" alt="2" title="2" class="rounded-md border">
+                        </div>
+                        <div class="screenshots-img p-1 mx-1 scale-90">
+                            <img src="../dist/img/3.jpg" alt="3" title="3" class="rounded-md border">
+                        </div>
+                        <div class="screenshots-img p-1 mx-1 scale-90">
+                            <img src="../dist/img/4.jpg" alt="4" title="4" class="rounded-md border">
+                        </div>
+                        <div class="screenshots-img p-1 mx-1 scale-90">
+                            <img src="../dist/img/5.jpg" alt="5" title="5" class="rounded-md border">
+                        </div>
+                        <div class="screenshots-img p-1 mx-1 scale-90">
+                            <img src="../dist/img/6.jpg" alt="6" title="6" class="rounded-md border">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- testimonial -->
+
+        <section class="testimonial bg-gray-50 py-20">
+            <div class="container mx-auto px-4">
+                <div class="testimonial-title text-center mx-auto max-w-xl">
+                    <h6 class="uppercase mb-2">App
+                        <span class="font-semibold">Screens</span>
+                    </h6>
+                    <h2 class="font-semibold mb-3 text-3xl">Awesome Screenshot</h2>
+                    <p class="text-gray-500">Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
+                        doloremque rem aperiam.</p>
+                </div>
+                <div class="testimonial-items text-center mt-16">
+                    <p class="text-gray-500">“Itaque earum us tenetur sapiente delectus asperiores repellat.”</p>
+                    <h4 class="text-xl font-medium mt-4 mb-10 max-w-3xl mx-auto">At vero eos et accusamus iusto odio
+                        dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atqued corrupti as quos
+                        dolores quas molestias excepturi occaecati provident.</h4>
+                    <img src="../dist/img/user-1.jpg" alt="" class="rounded-full h-16 mx-auto">
+                    <h5 class="font-medium mt-6">Mayra Vasquez</h5>
+                    <p class="text-sm text-gray-500 mt-1">Web Development, USA</p>
+                </div>
+                <div class="mt-10">
+                    <div class="flex flex-wrap">
+                        <div class="md:w-1/4 sm:w-2/4 w-full">
+                            <div class="testimonial-img p-4">
+                                <img src="../dist/img/dribbble.png" alt="" class="h-10 mx-auto">
+                            </div>
+                        </div>
+                        <div class="md:w-1/4 sm:w-2/4 w-full">
+                            <div class="testimonial-img p-4">
+                                <img src="../dist/img/insta.png" alt="" class="h-10 mx-auto">
+                            </div>
+                        </div>
+                        <div class="md:w-1/4 sm:w-2/4 w-full">
+                            <div class="testimonial-img p-4">
+                                <img src="../dist/img/bootstrap.png" alt="" class="h-10 mx-auto">
+                            </div>
+                        </div>
+                        <div class="md:w-1/4 sm:w-2/4 w-full">
+                            <div class="testimonial-img p-4">
+                                <img src="../dist/img/jquery.png" alt="" class="h-10 mx-auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- pricing -->
+
+        <section class="pricing py-20">
+            <div class="container mx-auto px-4">
+                <div class="pricing-title text-center mx-auto max-w-xl">
+                    <h6 class="uppercase mb-2">Our
+                        <span class="font-semibold">Pricing</span>
+                    </h6>
+                    <h2 class="font-semibold mb-3 text-3xl">Pricing Plan</h2>
+                    <p class="text-gray-500">Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
+                        doloremque rem aperiam.</p>
+                </div>
+                <div class="flex justify-center mt-10">
+                    <div class="bg-gray-500/10 p-2 rounded-full border inline-block">
+                        <div class="flex items-center">
+                            <button class="py-2 px-4 bg-blue-600 rounded-full text-white me-3">Monthly</button>
+                            <button class="py-2 px-4 rounded-full">Yearly</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-items mt-16">
+                    <div class="flex flex-wrap">
+                        <div class="lg:w-1/3 md:w-2/4 w-full">
+                            <div class="pricing-box p-10 rounded-md shadow-lg mx-4 md:my-0">
+                                <div class="pricing-inner">
+                                    <div class="p-7 rounded-md text-center bg-gray-50">
+                                        <h5 class="text-lg font-medium">Free</h5>
+                                        <h2 class="text-4xl font-semibold text-blue-600">$0.00<span class="text-base font-normal text-gray-500">/Month</span></h2>
+                                    </div>
+                                    <ul class="mt-8">
+                                        <li class="items-center flex">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                              </svg>
+                                              
+                                            <p class="text-gray-500 ms-2"><span class="font-bold text-gray-800">3</span> Projects</p>
+                                        </li>
+                                        <li class="items-center flex mt-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                              </svg>
+                                              
+                                            <p class="text-gray-500 ms-2"><span class="font-bold text-gray-800">580GB</span> Storage</p>
+                                        </li>
+                                        <li class="items-center flex mt-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                              </svg>
+                                              
+                                            <p class="text-gray-500 ms-2"><span class="font-bold text-gray-800">Unlimited</span> Contacts</p>
+                                        </li>
+                                        <li class="items-center flex mt-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                              </svg>
+                                              
+                                            <p class="text-gray-500 ms-2"><span class="font-bold text-gray-800">5</span> Domains</p>
+                                        </li>
+                                        <li class="items-center flex mt-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                              </svg>
+                                              
+                                            <p class="text-gray-500 ms-2">Free Support <span class="font-bold text-gray-800">24/7</span></p>
+                                        </li>
+                                    </ul>
+                                    <div class="mt-14">
+                                        <a href="#" class="py-2 px-6 flex items-center justify-center rounded-md text-white bg-gradient-to-r from-blue-500 to-blue-300">Choose Plan</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/3 md:w-2/4 w-full">
+                            <div class="pricing-box p-10 rounded-md shadow-lg relative overflow-hidden mx-4 md:my-0 my-5">
+                                <div class="pricing-inner">
+                                    <div class="absolute right-0 top-0 h-16 w-16 z-10">
+                                        <div class="absolute rotate-45 bg-red-600 text-center text-white font-normal text-sm py-0.5 right-[-35px] top-[32px] w-[170px] shadow-lg">
+                                            Most Popular
+                                        </div>
+                                    </div>
+                                    <div class="p-7 rounded-md text-center bg-gray-50">
+                                        <h5 class="text-lg font-medium">Standard</h5>
+                                        <h2 class="text-4xl font-semibold text-blue-600">$29.00<span class="text-base font-normal text-gray-500">/Month</span></h2>
+                                    </div>
+                                    <ul class="mt-8">
+                                        <li class="items-center flex">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                              </svg>
+                                              
+                                            <p class="text-gray-500 ms-2"><span class="font-bold text-gray-800">10</span> Projects</p>
+                                        </li>
+                                        <li class="items-center flex mt-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                              </svg>
+                                              
+                                            <p class="text-gray-500 ms-2"><span class="font-bold text-gray-800">1TB</span> Storage</p>
+                                        </li>
+                                        <li class="items-center flex mt-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                              </svg>
+                                              
+                                            <p class="text-gray-500 ms-2"><span class="font-bold text-gray-800">Unlimited</span> Contacts</p>
+                                        </li>
+                                        <li class="items-center flex mt-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                              </svg>
+                                              
+                                            <p class="text-gray-500 ms-2"><span class="font-bold text-gray-800">12</span> Domains</p>
+                                        </li>
+                                        <li class="items-center flex mt-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                              </svg>
+                                              
+                                            <p class="text-gray-500 ms-2">Free Support <span class="font-bold text-gray-800">24/7</span></p>
+                                        </li>
+                                    </ul>
+                                    <div class="mt-14">
+                                        <a href="#" class="py-2 px-6 flex items-center justify-center rounded-md text-white bg-gradient-to-r from-blue-500 to-blue-300">Choose Plan</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/3 md:w-2/4 w-full">
+                            <div class="pricing-box p-10 rounded-md shadow-lg mx-4 md:my-0 md:mt-8 lg:mt-0">
+                                <div class="pricing-inner">
+                                    <div class="p-7 rounded-md text-center bg-gray-50">
+                                        <h5 class="text-lg font-medium">Enterprice</h5>
+                                        <h2 class="text-4xl font-semibold text-blue-600">$49.00<span class="text-base font-normal text-gray-500">/Month</span></h2>
+                                    </div>
+                                    <ul class="mt-8">
+                                        <li class="items-center flex">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                              </svg>
+                                              
+                                            <p class="text-gray-500 ms-2"><span class="font-bold text-gray-800">20</span> Projects</p>
+                                        </li>
+                                        <li class="items-center flex mt-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                              </svg>
+                                              
+                                            <p class="text-gray-500 ms-2"><span class="font-bold text-gray-800">2.5TB</span> Storage</p>
+                                        </li>
+                                        <li class="items-center flex mt-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                              </svg>
+                                              
+                                            <p class="text-gray-500 ms-2"><span class="font-bold text-gray-800">Unlimited</span> Contacts</p>
+                                        </li>
+                                        <li class="items-center flex mt-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                              </svg>
+                                              
+                                            <p class="text-gray-500 ms-2"><span class="font-bold text-gray-800">18</span> Domains</p>
+                                        </li>
+                                        <li class="items-center flex mt-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                              </svg>
+                                              
+                                            <p class="text-gray-500 ms-2">Free Support <span class="font-bold text-gray-800">24/7</span></p>
+                                        </li>
+                                    </ul>
+                                    <div class="mt-14">
+                                        <a href="#" class="py-2 px-6 flex items-center justify-center rounded-md text-white bg-gradient-to-r from-blue-500 to-blue-300">Choose Plan</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- faqs -->
+
+        <section class="faqs bg-gray-50 py-20">
+            <div class="container mx-auto px-4">
+                <div class="faqs-title text-center mx-auto max-w-xl">
+                    <h6 class="uppercase mb-2">our
+                        <span class="font-semibold">FAQs</span>
+                    </h6>
+                    <h2 class="font-semibold mb-3 text-3xl">Frequently Asked Questions</h2>
+                    <p class="text-gray-500">Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium
+                        doloremque rem aperiam.</p>
+                </div>
+                <div class="faqs-items mt-16">
+                    <div class="flex flex-wrap">
+                        <div class="lg:w-1/3  w-full">
+                            <div class="faqs-img">
+                                <img src="../dist/img/faq.png" alt="" class="mx-auto">
+                            </div>
+                        </div>
+                        <div class="lg:w-1/2 w-full">
+                            <div class="lg:ms-24 w-full">
+                                <div class="faqs-items mt-10 lg:mt-0">
+                                    <button class="bg-gray-200 rounded rounded-b-none text-base px-5 py-3 inline-flex items-center gap-x-3 w-full font-medium text-left text-gray-800 transition hover:text-gray-500">How to install App?
+                                        <span class="ms-auto">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                              </svg>
+                                              
+                                        </span>
+                                    </button>
+                                    <div class="faqs-content w-full overflow-hidden p-5 bg-white rounded-b-md">
+                                        <p class="text-sm text-gray-500">
+                                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci velit sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="faqs-items mt-4">
+                                    <button class="bg-gray-200 rounded rounded-b-none text-base px-5 py-3 inline-flex items-center gap-x-3 w-full font-medium text-left text-gray-800 transition hover:text-gray-500">How do I get the Mobile App for my phone?
+                                        <span class="ms-auto">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                              </svg>
+                                              
+                                        </span>
+                                    </button>
+                                    <div class="hidden faqs-content w-full overflow-hidden bg-white rounded-b-md">
+                                        <p class="text-sm text-gray-500 p-5">
+                                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci velit sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="faqs-items mt-4">
+                                    <button class="bg-gray-200 rounded rounded-b-none text-base px-5 py-3 inline-flex items-center gap-x-3 w-full font-medium text-left text-gray-800 transition hover:text-gray-500">What’s special about Appexy?
+                                        <span class="ms-auto">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                              </svg>
+                                              
+                                        </span>
+                                    </button>
+                                    <div class="hidden faqs-content w-full overflow-hidden bg-white rounded-b-md">
+                                        <p class="text-sm text-gray-500 p-5">
+                                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci velit sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="faqs-items mt-4">
+                                    <button class="bg-gray-200 rounded rounded-b-none text-base px-5 py-3 inline-flex items-center gap-x-3 w-full font-medium text-left text-gray-800 transition hover:text-gray-500">How much does Appexy cost?    
+                                        <span class="ms-auto">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                              </svg>
+                                              
+                                        </span>
+                                    </button>
+                                    <div class="hidden faqs-content w-full overflow-hidden bg-white rounded-b-md">
+                                        <p class="text-sm text-gray-500 p-5">
+                                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci velit sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="faqs-items mt-4">
+                                    <button class="bg-gray-200 rounded rounded-b-none text-base px-5 py-3 inline-flex items-center gap-x-3 w-full font-medium text-left text-gray-800 transition hover:text-gray-500">How do I disable installed apps?    
+                                        <span class="ms-auto">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                              </svg>
+                                              
+                                        </span>
+                                    </button>
+                                    <div class="hidden faqs-content w-full overflow-hidden bg-white rounded-b-md">
+                                        <p class="text-sm text-gray-500 p-5">
+                                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci velit sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="faqs-items mt-4">
+                                    <button class="bg-gray-200 rounded rounded-b-none text-base px-5 py-3 inline-flex items-center gap-x-3 w-full font-medium text-left text-gray-800 transition hover:text-gray-500">What about the security of my payments?    
+                                        <span class="ms-auto">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                              </svg>
+                                              
+                                        </span>
+                                    </button>
+                                    <div class="hidden faqs-content w-full overflow-hidden bg-white rounded-b-md">
+                                        <p class="text-sm text-gray-500 p-5">
+                                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci velit sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- phoneapp -->
+
+        <section class="phoneapp py-20">
+            <div class="container mx-auto px-4">
+                <div class="phoneapp-title max-w-2xl mx-auto text-center">
+                    <h2 class="md:text-5xl text-3xl font-semibold">Available For Your Smartphone.</h2>
+                    <p class="text-gray-500 mt-7">The wise man therefore always holds in these matters to this of selection he rejects pleasures to other greater that id pains to avoid worse.</p>
+                    <div class="flex flex-wrap items-center justify-center mt-12">
+                        <a href="#" class="shadow-xl mx-1">
+                            <img src="../dist/img/i-store.png" alt="">
+                        </a>
+                        <a href="#" class="shadow-xl mx-1">
+                            <img src="../dist/img/play-store.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact -->
+
+        <section class="contact py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="contact-title text-center mx-auto max-w-xl">
+                    <h6 class="uppercase mb-2">Our 
+                        <span class="font-semibold">Contact Us</span>
+                    </h6>
+                    <h2 class="font-semibold mb-3 text-3xl">Get in Touch</h2>
+                    <p class="text-gray-500">Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque rem aperiam.</p>
+                </div>
+                <div class="contact-items mt-16">
+                    <div class="flex flex-wrap">
+                        <div class="lg:w-1/3 w-full ">
+                            <div class="contact-inner mb-10 lg:mb-0">
+                                <div class="flex items-center gap-6">
+                                    <img src="../dist/img/hello-icon.png" alt="" class="h-20">
+                                    <h2 class="font-semibold text-3xl">Say Hello!</h2>
+                                </div>
+                                <div class="flex items-center gap-5 mt-10">
+                                    <div class="h-10 w-10 rounded-md bg-blue-100 flex items-center justify-center">
+                                        <i class="ri-mail-fill text-2xl text-blue-600"></i>
+                                    </div>
+                                    <h5 class="text-xl font-medium">Email</h5>
+                                </div>
+                                <p class="flex items-center gap-1 text-gray-500 mt-4">
+                                    <a href="#" class="text-base font-normal">JuanaMRush@jourrapide.com</a>
+                                </p>
+                                <p class="flex items-center gap-1 text-gray-500">
+                                    <a href="#" class="text-base font-normal">BrandonDBrown@jourrapide.com</a>
+                                </p>
+                                <div class="flex items-center gap-5 mt-6">
+                                    <div class="h-10 w-10 rounded-md bg-blue-100 flex items-center justify-center">
+                                        <i class="ri-phone-fill text-2xl text-blue-600"></i>
+                                    </div>
+                                    <h5 class="text-xl font-medium">Phone</h5>
+                                </div>
+                                <p class="flex items-center gap-1 text-gray-500 mt-4">
+                                    <a href="#" class="text-base font-normal">(+01) 1234 5678 00</a>
+                                </p>
+                                <p class="flex items-center gap-1 text-gray-500">
+                                    <a href="#" class="text-base font-normal">(+01) 1234 5678 00</a>
+                                </p>
+                                <div class="flex items-center gap-5 mt-6">
+                                    <div class="h-10 w-10 rounded-md bg-blue-100 flex items-center justify-center">
+                                        <i class="ri-map-pin-fill text-2xl text-blue-600"></i>
+                                    </div>
+                                    <h5 class="text-xl font-medium">Address</h5>
+                                </div>
+                                <h5 class="flex items-center gap-1 text-gray-900 mt-4">
+                                    <a href="#" class="text-base font-medium"> New York Office</a>
+                                </h5>
+                                <p class="text-base font-normal text-gray-500">331 Maple Street, Monroe Avenue, CA 90017</p>
+                                <h5 class="flex items-center gap-1 text-gray-900 mt-4">
+                                    <i class="mdi mdi-arrow-right-thin text-2xl"></i>
+                                    <a href="#" class="text-base font-medium">Anguilla Office</a>
+                                </h5>
+                                <p class="text-base font-normal text-gray-500">2118 Bird Spring, Creek Road, TX 77388</p>
+                            </div>
+                        </div>
+                        <div class="lg:w-2/3 w-full">
+                            <div class="contact-inner lg:ms-24">
+                                <form class="p-12 rounded-md shadow-lg bg-white border">
+                                  
+                                    <div class="grid sm:grid-cols-2 gap-6">
+                                        <div>
+                                            <label class="block text-sm/normal font-semibold text-gray-500 mb-2">First Name</label>
+                                            <input type="text" class="block w-full text-sm rounded-md py-2 px-3 border border-gray-300" placeholder="Your first name...">
+                                        </div>
+        
+                                        <div>
+                                            <label class="block text-sm/normal font-semibold text-gray-500 mb-2">Last Name</label>
+                                            <input type="text" class="block w-full text-sm rounded-md py-2 px-3 border border-gray-300" placeholder="Last first name...">
+                                        </div>
+        
+                                        <div>
+                                            <label class="block text-sm/normal font-semibold text-gray-500 mb-2">Email Address</label>
+                                            <input type="email" class="block w-full text-sm rounded-md py-2 px-3 border border-gray-300" placeholder="Your email...">
+                                        </div>
+        
+                                        <div>
+                                            <label class="block text-sm/normal font-semibold text-gray-500 mb-2">Phone Number</label>
+                                            <input type="text" class="block w-full text-sm rounded-md py-2 px-3 border border-gray-300" placeholder="Type phone number...">
+                                        </div>
+        
+                                        <div class="sm:col-span-2">
+                                            <div class="mb-3">
+                                                <label class="block text-sm/normal font-semibold text-gray-500 mb-2">Subject</label>
+                                                <input type="text" class="block w-full text-sm rounded-md py-2 px-3 border border-gray-300" placeholder="Type subject...">
+                                            </div>
+                                        </div>
+                                        <div class="sm:col-span-2">
+                                            <div class="mb-4">
+                                                <label class="block text-sm/normal font-semibold text-gray-500 mb-2">Messages</label>
+                                                <textarea class="block w-full text-sm rounded-md py-2 px-3 border border-gray-300" placeholder="Type messages..." ></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="py-2 px-6 rounded-md text-white bg-gradient-to-r from-rose-600 to-rose-300">Send Messages </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-center bg-no-repeat bg-[#343a40]" style="background-image: url('../dist/img/footer-light-bg.png');">
+        <div class="container mx-auto px-4">
+            <div class="footer-inner pt-20 pb-10">
+                <div class="flex flex-wrap">
+                    <div class="2xl:w-1/5 w-full">
+                        <div class="footer-itmes  mb-8 2xl:mb-0 text-center 2xl:text-start ">
+                            <a href="#" class="flex items-center gap-2 justify-center 2xl:justify-start">
+                                <img src="../dist/img/logo-light.png" class="" alt="">
+                            </a>
+                            <div class="my-5">
+                                <a href="#" class="text-slate-100">Hello@coderthemes.com</a>
+                                <p class="text-slate-200">+01 ( 1234 567 890 )</p>
+                            </div>
+                            <h5 class="text-white 2xl:text-lg text-base mb-4">Follow Us</h5>
+                            <ul class="flex items-center gap-4 justify-center 2xl:justify-start">
+                                <li>
+                                    <a href="javascript:void(0);" class="bg-[#495057] hover:bg-white text-white hover:text-blue-600 hover:shadow-sm transition-all duration-300 h-10 w-10 rounded-md flex justify-center items-center">
+                                        <i class="ri-facebook-circle-fill text-xl"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" class="bg-[#495057] hover:bg-white text-white hover:text-blue-600 hover:shadow-sm transition-all duration-300 h-10 w-10 rounded-md flex justify-center items-center">
+                                        <i class="ri-twitter-fill text-xl"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" class="bg-[#495057] hover:bg-white text-white hover:text-blue-600 hover:shadow-sm transition-all duration-300 h-10 w-10 rounded-md flex justify-center items-center">
+                                        <i class="ri-linkedin-box-fill text-xl"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" class="bg-[#495057] hover:bg-white text-white hover:text-blue-600 hover:shadow-sm transition-all duration-300 h-10 w-10 rounded-md flex justify-center items-center">
+                                        <i class="ri-skype-fill text-xl"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="2xl:w-1/5 md:w-3/12 sm:w-6/12 w-full">
+                        <div class="footer-itmes my-4 md:mx-4 md:my-0 2xl:my-0">
+                            <h5 class="xl:text-xl lg:text-lg text-white mb-4">About Us</h5>
+                            <p class="mb-3">
+                                <a href="javascript:void(0);" class="text-slate-300 hover:text-slate-100 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-600 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Support Center</a>
+                            </p>
+                            <p class="mb-3">
+                                <a href="javascript:void(0);" class="text-slate-300 hover:text-slate-100 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-600 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Customer Support</a>
+                            </p>
+                            <p class="mb-3">
+                                <a href="javascript:void(0);" class="text-slate-300 hover:text-slate-100 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-600 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">About Us</a>
+                            </p>
+                            <p class="mb-3">
+                                <a href="javascript:void(0);" class="text-slate-300 hover:text-slate-100 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-600 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Copyright</a>
+                            </p>
+                            <p>
+                                <a href="javascript:void(0);" class="text-slate-300 hover:text-slate-100 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-600 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Popular Campaign</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="2xl:w-1/5 md:w-3/12 sm:w-6/12 w-full">
+                        <div class="footer-itmes my-4 md:mx-4 md:my-0 2xl:my-0">
+                            <h5 class="xl:text-xl lg:text-lg text-white mb-4">Our Information</h5>
+                            <p class="mb-3">
+                                <a href="javascript:void(0);" class="text-slate-300 hover:text-slate-100 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-600 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Return Policy</a>
+                            </p>
+                            <p class="mb-3">
+                                <a href="javascript:void(0);" class="text-slate-300 hover:text-slate-100 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-600 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Privacy Policy</a>
+                            </p>
+                            <p class="mb-3">
+                                <a href="javascript:void(0);" class="text-slate-300 hover:text-slate-100 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-600 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Terms &amp; Conditions</a>
+                            </p>
+                            <p class="mb-3">
+                                <a href="javascript:void(0);" class="text-slate-300 hover:text-slate-100 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-600 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Site Map</a>
+                            </p>
+                            <p>
+                                <a href="javascript:void(0);" class="text-slate-300 hover:text-slate-100 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-600 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Store Hours</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="2xl:w-1/5 md:w-3/12 sm:w-6/12 w-full">
+                        <div class="footer-itmes my-4 md:mx-4 md:my-0 2xl:my-0">
+                            <h5 class="xl:text-xl lg:text-lg text-white mb-4">My Account</h5>
+                            <p class="mb-3">
+                                <a href="javascript:void(0);" class="text-slate-300 hover:text-slate-100 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-600 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Press Inquiries</a>
+                            </p>
+                            <p class="mb-3">
+                                <a href="javascript:void(0);" class="text-slate-300 hover:text-slate-100 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-600 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Social Media Directories</a>
+                            </p>
+                            <p class="mb-3">
+                                <a href="javascript:void(0);" class="text-slate-300 hover:text-slate-100 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-600 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Images &amp; B-roll</a>
+                            </p>
+                            <p class="mb-3">
+                                <a href="javascript:void(0);" class="text-slate-300 hover:text-slate-100 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-600 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Permissions</a>
+                            </p>
+                            <p>
+                                <a href="javascript:void(0);" class="text-slate-300 hover:text-slate-100 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-600 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Speaker Requests</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="2xl:w-1/5 md:w-3/12 sm:w-6/12 w-full">
+                        <div class="footer-itmes my-4 md:mx-4 md:my-0 2xl:my-0">
+                            <h5 class="xl:text-xl lg:text-lg text-white mb-4">Policy</h5>
+                            <p class="mb-3">
+                                <a href="javascript:void(0);" class="text-base font-normal text-slate-300 hover:text-slate-100 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-600 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Application Security</a>
+                            </p>
+                            <p class="mb-3">
+                                <a href="javascript:void(0);" class="text-slate-300 hover:text-slate-100 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-600 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Softwere Principles</a>
+                            </p>
+                            <p class="mb-3">
+                                <a href="javascript:void(0);" class="text-slate-300 hover:text-slate-100 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-600 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Softwere Policy</a>
+                            </p>
+                            <p>
+                                <a href="javascript:void(0);" class="text-slate-300 hover:text-slate-100 after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-blue-600 hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Risponsible Supply Chain</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-[#484d53] py-2 text-white/75">
+            <div class="container lg:px-24">
+                <div class="flex flex-wrap justify-between items-center">
+                    <p class="opacity-75">
+                        <a href="#">2023 © Appexy - Coderthemes.com</a>
+                    </p>
+                    <p class="opacity-75 mt-3 sm:mt-0">
+                        <a href="#">Terms Conditions &amp; Policy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =========== Back To Top =========== -->
+
+    <a href="javscript:void(0)" class="back-to-top fixed rounded z-10 bottom-5 end-5 px-1.5 text-xl text-center bg-gradient-to-r from-blue-600 to-blue-400 text-white leading-8 transition-all duration-500 block opacity-100 in">
+        <i class="ri-arrow-up-s-line text-2xl"></i>
+    </a>
+
+    <script src="../dist/js/jquery-3.7.0.min.js"></script>
+    <script src="../dist/js/owl.carousel.min.js"></script>
+    <script src="../dist/js/index.js"></script>
+
+</body>
+
+</html>
